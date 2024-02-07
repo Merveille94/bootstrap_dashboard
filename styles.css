@@ -27,6 +27,7 @@ body {
   min-width: 264px;
   background: var(--bs-secondary-bg);
   transition: all 0.35s ease-in;
+  margin-left: 20px;
 }
 
 .main {
@@ -38,4 +39,5 @@ body {
   overflow: hidden;
   width: 100%;
   background: var(--bs-body-bg);
+  margin-right: 20px;
 }
