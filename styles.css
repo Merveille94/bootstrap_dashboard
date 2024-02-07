@@ -14,3 +14,28 @@ body {
   margin: 0;
 }
 
+/* Layout for the admin dashboard framework*/
+
+.wrapper{
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar{
+    max-width: 264px;
+    min-width: 264px;
+    background: var(--bs-dark);
+    transition: all 0.35s ease-in;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    transition: all 0.35s ease-in;
+    overflow: hidden;
+    width: 100%;
+}
+
