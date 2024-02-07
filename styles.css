@@ -14,28 +14,28 @@ body {
   margin: 0;
 }
 
-/* Layout for the admin dashboard framework*/
+/* Layout for the admin dashboard frame*/
 
-.wrapper{
-    align-items: stretch;
-    display: flex;
-    width: 100%;
+.wrapper {
+  align-items: stretch;
+  display: flex;
+  width: 100%;
 }
 
-#sidebar{
-    max-width: 264px;
-    min-width: 264px;
-    background: var(--bs-dark);
-    transition: all 0.35s ease-in;
+#sidebar {
+  max-width: 264px;
+  min-width: 264px;
+  background: var(--bs-boday-color);
+  transition: all 0.35s ease-in;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 0;
-    transition: all 0.35s ease-in;
-    overflow: hidden;
-    width: 100%;
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  transition: all 0.35s ease-in;
+  overflow: hidden;
+  width: 100%;
+  background: var(--bs-emphasis-color);
 }
-
