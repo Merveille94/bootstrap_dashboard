@@ -47,13 +47,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px; /* Adjust the width as needed */
+    width: 250px; /* Adjust the width as needed
     height: 100%;
     z-index: 1;
-    background-color: var(--bs-secondary-bg); /* Set background color */
-    transition: width 0.3s ease; /* Add transition effect */
+    background-color: var(--bs-secondary-bg); 
+    transition: width 0.3s ease; 
   }
   #sidebar.active {
-    width: 0; /* Collapse sidebar */
+    width: 0;    
   }
-} */
+} 
+
+*/
