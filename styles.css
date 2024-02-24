@@ -13,3 +13,47 @@ body {
   overflow-y: scroll;
   margin: 0;
 }
+
+/* Layout for the admin dashboard frame*/
+
+/* .wrapper {
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+} */
+
+/* #sidebarMenu {
+  max-width: 264px;
+  min-width: 264px;
+  background: var(--bs-secondary-bg);
+  transition: all 0.35s ease-in;
+  margin-left: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  transition: all 0.35s ease-in;
+  overflow: hidden;
+  width: 100%;
+  background: var(--bs-body-bg);
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: 100%;
+    z-index: 1;
+    background-color: var(--bs-secondary-bg); /* Set background color */
+    transition: width 0.3s ease; /* Add transition effect */
+  }
+  #sidebar.active {
+    width: 0; /* Collapse sidebar */
+  }
+} */
