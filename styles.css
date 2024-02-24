@@ -13,31 +13,3 @@ body {
   overflow-y: scroll;
   margin: 0;
 }
-
-/* Layout for the admin dashboard frame*/
-
-.wrapper {
-  align-items: stretch;
-  display: flex;
-  width: 100%;
-}
-
-#sidebar {
-  max-width: 264px;
-  min-width: 264px;
-  background: var(--bs-secondary-bg);
-  transition: all 0.35s ease-in;
-  margin-left: 20px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 0;
-  transition: all 0.35s ease-in;
-  overflow: hidden;
-  width: 100%;
-  background: var(--bs-body-bg);
-  margin-right: 20px;
-}
