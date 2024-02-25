@@ -1,4 +1,4 @@
-Got it! Let's try a different approach:
+
 
 ---
 
@@ -35,5 +35,3 @@ This project is licensed under the [MIT License](LICENSE), allowing you to use, 
 If you have any questions, feedback, or issues, please don't hesitate to [open an issue](https://github.com/yourusername/bootstrap-dashboard-template/issues) in this repository. Our team is here to assist you and address any concerns you may have.
 
 ---
-
-Feel free to adjust the content according to your specific dashboard template project!
