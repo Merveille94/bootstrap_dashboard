@@ -22,13 +22,7 @@ body {
   background: var(--bs-secondary-bg);
 }
 
-.main{
-    background: var(--bs-body-bg);
-    padding-top: 2rem;;
-}
-
-.sidebar a{
-    text-decoration: none;
-    list-style: none;
-    color: black;
+.main {
+  background: var(--bs-body-bg);
+  padding-top: 2rem;
 }
