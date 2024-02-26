@@ -23,7 +23,14 @@ body {
   height: 100vh;
 }
 
+.card-body{
+  background: var(--bs-secondary-bg);
+}
+
 .main {
   background: var(--bs-body-bg);
   padding-top: 2rem;
+}
+.Sideitem{
+  background: var(--bs-secondary-bg);
 }
