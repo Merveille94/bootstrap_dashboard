@@ -3,12 +3,12 @@
 ---
 
 # Bootstrap Dashboard Template
-<img src="/Home page 01 (1).png">
+<img src="/img/Home page 01 (1).png">
 
 Welcome to the Bootstrap Dashboard Template repository! This project offers a modern and flexible dashboard template built with Bootstrap, perfect for creating sleek and intuitive user interfaces for your web applications.
 
 ## Features:
-<img src="/Booking process.png">
+<img src="img/Booking process.png">
 
 - **Responsive Design:** Enjoy a seamless user experience across various devices and screen sizes, thanks to the responsive layout powered by Bootstrap.
 - **Customizable Components:** Easily customize and extend the dashboard using Bootstrap's extensive library of UI components, such as cards, tables, forms, and buttons.
@@ -18,7 +18,7 @@ Welcome to the Bootstrap Dashboard Template repository! This project offers a mo
 - **Easy Integration:** Seamlessly integrate the dashboard template with your existing web application or start a new project from scratch with the included starter template.
 
 ## Getting Started:
-<img src="/Booking confirmation screen.png">
+<img src="img/Booking confirmation screen.png">
 
 To start using the Bootstrap Dashboard Template, simply clone or download the repository and follow the [installation instructions](docs/installation.md) provided in the documentation. You can also explore the [demo](https://yourusername.github.io/bootstrap-dashboard-template) to see the template in action.
 

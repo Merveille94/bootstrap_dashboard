@@ -1,46 +1,166 @@
-<!-- NB: This is the Dashboard pge i am designing based the test idea this page uses 
-css whiles the test is done fully using bootstrap no css involve. -->
+
+<!-- NB: This is a text or framework on which my design will be based on. it is not the finish 
+work but to give an ideas of the Dashboard site  -->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Dashboard" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <aside id="sidebar">
-        <!--content for the side bar-->
-      </aside>
-      <!-- main page content -->
-      <div class="main">
-        <nav class="navbar">
-          <!-- sidebar button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <!-- getting back to coding later today -->
-          </button>
-        </nav>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-    <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Onboarding</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <form class="d-flex mx-auto">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <button class="btn btn-primary">Create</button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-chat"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-primary">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Side Menu -->
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <button type="button" class="btn btn-outline-dark rounded-pill"><i class="bi bi-person-plus"></i> Welcome</button>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#submenu1"> <i class="bi bi-house-door-fill"></i> Dashboard</a>
+            <ul class="nav collapse col-lg-6" id="submenu1">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#submenu2">Earnings</a>
+            <ul class="nav col-lg-6 collapse" id="submenu2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Refund request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class=" main col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-body">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 1
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 2
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 3
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 4
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 5
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 6
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 7
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              Content 8
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
