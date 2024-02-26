@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   opacity: 1;
-  overflow-y: scroll;
+  overflow-y:hidden;
   margin: 0;
 }
 
@@ -20,6 +20,7 @@ body {
 
 #sidebarMenu {
   background: var(--bs-secondary-bg);
+  height: 100vh;
 }
 
 .main {
