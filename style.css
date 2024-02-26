@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   opacity: 1;
-  overflow-y:hidden;
+  overflow-y: hidden;
   margin: 0;
 }
 
@@ -23,7 +23,7 @@ body {
   height: 100vh;
 }
 
-.card-body{
+.card-body {
   background: var(--bs-secondary-bg);
 }
 
@@ -31,6 +31,8 @@ body {
   background: var(--bs-body-bg);
   padding-top: 2rem;
 }
-.Sideitem{
+
+/* the various content colors */
+.Sideitem {
   background: var(--bs-secondary-bg);
 }
