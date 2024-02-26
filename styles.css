@@ -16,13 +16,13 @@ body {
 
 /* Layout for the admin dashboard frame*/
 
-/* .wrapper {
+.wrapper {
   align-items: stretch;
   display: flex;
   width: 100%;
-} */
+}
 
-/* #sidebarMenu {
+ #sidebar {
   max-width: 264px;
   min-width: 264px;
   background: var(--bs-secondary-bg);
@@ -47,7 +47,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px; /* Adjust the width as needed
+    width: 250px; /* Adjust the width as needed*/
     height: 100%;
     z-index: 1;
     background-color: var(--bs-secondary-bg); 
@@ -58,4 +58,3 @@ body {
   }
 } 
 
-*/

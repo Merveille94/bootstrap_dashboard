@@ -1,0 +1,12 @@
+.navbar {
+  background: var(--bs-secondary-bg);
+}
+
+#sidebarMenu {
+  background: var(--bs-secondary-bg);
+}
+
+.main{
+    background: var(--bs-body-bg);
+    padding-top: 2rem;;
+}
