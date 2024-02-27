@@ -8,6 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bootstrap Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -36,14 +40,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <form class="d-flex mx-auto">
             <input
-              class="form-control rounded-pill me-2"
+              class="form-control rounded-pill me-2 px-5"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success rounded-pill" type="submit">
-              Search
-            </button>
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -69,8 +70,8 @@
     <div class="container-fluid">
       <div class="row">
         <!-- Side Menu -->
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar">
-          <div class="position-sticky">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar sticky-top">
+          <div>
             <ul class="nav flex-column pt-4">
               <button
                 type="button"
@@ -85,11 +86,14 @@
                   href="#"
                   data-bs-toggle="collapse"
                   data-bs-target="#submenu1"
+                  
                 >
-                  <i class="bi bi-house-door-fill h5"></i>
-                  <span class="h6">Dashboard</span></a
-                >
-                <ul class="nav collapse col-lg-6 ps-4" id="submenu1">
+                <span>
+                <i class="bi bi-house-door-fill h5 pe-2"></i>
+                <span class="h6 pe-4">Dashboard</span>
+                </span> 
+                <i class="bi bi-chevron-down"></i></a>
+                <ul class="nav show collapse col-lg-6 ps-4" id="submenu1">
                   <li class="nav-item">
                     <a
                       class="nav-link text-dark border-start border-secondary ps-3"
@@ -128,10 +132,10 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#submenu2"
                 >
-                  <i class="bi bi-cash-coin h5"></i>
-                  <span class="h6">Earnings</span></a
+                  <i class="bi bi-cash-coin h5 pe-2"></i>
+                  <span class="h6 pe-4">Earnings</span><i class="bi bi-chevron-down"></i></a
                 >
-                <ul class="nav col-lg-8 collapse ps-4" id="submenu2">
+                <ul class="nav col-lg-8 show collapse ps-4" id="submenu2">
                   <li class="nav-item">
                     <a
                       class="nav-link text-dark border-start border-secondary ps-3"
@@ -163,10 +167,10 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#submenu3"
                 >
-                  <i class="bi bi-info-circle h5"></i>
-                  <span class="h6">Help & Support</span></a
+                  <i class="bi bi-info-circle h5 pe-2"></i>
+                  <span class="h6 pe-4">Help & Support</span><i class="bi bi-chevron-down"></i></a
                 >
-                <ul class="nav col-lg-6 collapse ps-4" id="submenu3">
+                <ul class="nav col-lg-6  show collapse ps-4" id="submenu3">
                   <li class="nav-item">
                     <a
                       class="nav-link text-dark border-start border-secondary ps-3"
@@ -218,7 +222,7 @@
                         <div class="col w-100 bg-light d-flex p-2 rounded-2">
                           <div class="col bg-light d-flex p-2">
                             <div class="col">
-                              <i class="bi bi-cash-coin h1 fs-1"></i>
+                              <i class="bi bi-cash-coin display-1"></i>
                             </div>
                             <div class="col">
                               <p class="h6 fs-6">Earnings</p>
@@ -237,7 +241,7 @@
                           </div>
                           <div class="col w-50 d-flex p-2 rounded-2 Sideitem">
                             <div class="col">
-                              <i class="bi bi-person h1 fs-1"></i>
+                              <i class="bi bi-person display-1"></i>
                             </div>
                             <div class="col">
                               <p class="h6 fs-6">Customers</p>
@@ -303,98 +307,18 @@
                     <div class="card mb-4">
                       <div class="card-body d-flex">
                         <div class="col text-start">
-                          <p class="h5 pt-2">Gig Overview</p>
+                          <p class="h5 pt-2">Dashboard</p>
                         </div>
                         <div class="col text-end">
                           <button
                             type="button"
                             class="btn btn-outline-dark rounded-pill"
                           >
-                            This weeks gig
+                            <div class="d-flex"><Span class="pe-2">6 month </Span><div class="bi bi-chevron-down"></div></div>
                           </button>
                         </div>
                       </div>
-                      <div class="card-body">
-                        <div class="col w-100 bg-light d-flex p-2 rounded-2">
-                          <div class="col bg-light d-flex p-2">
-                            <div class="col">
-                              <i class="bi bi-cash-coin h1 fs-1"></i>
-                            </div>
-                            <div class="col">
-                              <p class="h6 fs-6">Earnings</p>
-                              <div class="col text-start">
-                                <p class="h1 fs-1">489k</p>
-                              </div>
-                            </div>
-                            <div class="col text-end">
-                              <button
-                                type="button"
-                                class="btn btn-outline-dark rounded-pill py-0"
-                              >
-                                + 28.4%
-                              </button>
-                            </div>
-                          </div>
-                          <div class="col w-50 d-flex p-2 rounded-2 Sideitem">
-                            <div class="col">
-                              <i class="bi bi-person h1 fs-1"></i>
-                            </div>
-                            <div class="col">
-                              <p class="h6 fs-6">Customers</p>
-                              <div class="col text-start">
-                                <p class="h1 fs-1">16,146k</p>
-                              </div>
-                            </div>
-                            <div class="col text-end">
-                              <button
-                                type="button"
-                                class="btn btn-outline-dark rounded-pill py-0"
-                              >
-                                + 7.4%
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body d-flex">
-                        <div class="col text-start">
-                          <p class="fs-6">
-                            Welcome 456 customers with a personal message
-                          </p>
-                        </div>
-                        <div class="col text-end">
-                          <button
-                            type="button"
-                            class="btn btn-outline-dark rounded-pill py-0"
-                          >
-                            send a message
-                          </button>
-                        </div>
-                      </div>
-                      <div class="card-body d-flex">
-                        <div class="col d-flex justify-content-evenly">
-                          <div>
-                            <div><i class="bi bi-person-circle h1 fs-1"></i></div>
-                            <div class="display-6 fs-6">Sissi</div>
-                          </div>
-                          <div>
-                            <div><i class="bi bi-person-circle h1 fs-1"></i></div>
-                            <div class="display-6 fs-6">Clara</div>
-                          </div>
-                          <div>
-                            <div><i class="bi bi-person-circle h1 fs-1"></i></div>
-                            <div class="display-6 fs-6">Sofia</div>
-                          </div>
-                        </div>
-                        <div class="col text-end pe-5">
-                          <div>
-                            <div>
-                              <i class="bi bi-arrow-right-square-fill h1 fs-1"></i>
-                            </div>
-                            <div class="display-6 fs-6">View All</div>
-                          </div>
-                        </div>
-                      </div>
+                      <div class="card-body"><canvas id="myChart"></canvas></div>
                     </div>
                   </div>
               </div>
@@ -402,7 +326,36 @@
                 <div class="col-md-12">Row 3</div>
               </div>
               <div class="row">
-                <div class="col-md-12">Row 4</div>
+                <div class="col-md-12">
+                  <div class="card mb-4"> 
+                  <div class="card-body p-5">
+                    <div class="col text-start pb-4 ps-3">
+                      <p class="h5 pt-2 pb-2 display-6">Promote your music</p>
+                      <p>learn how to reach more fans vith this simple tips</p> 
+                    </div>
+                    <div class="btn d-flex justify-content-between">
+                      <button
+                      type="button"
+                      class="btn btn-outline-dark rounded-pill px-5">
+                      Social Media
+                     </button>
+
+                     <button
+                     type="button"
+                     class="btn btn-outline-dark rounded-pill px-5">
+                     Streaming Platform
+                    </button>
+
+                    <button
+                    type="button"
+                    class="btn btn-outline-dark rounded-pill px-5">
+                    Live Event
+                   </button>
+
+                    </div>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
     
@@ -417,7 +370,7 @@
                     </div>
                     <div class="card-body d-flex p-4">
                       <div class="col">
-                      <div class="pt-3 p-0"><i class="bi bi-person-circle h1"></i>
+                      <div class="pt-3 p-0"><i class="bi bi-person-circle display-2"></i>
                       </div>
                     </div>
                     
@@ -440,7 +393,7 @@
       
                   <div class="card-body d-flex border-top">
                     <div class="col">
-                    <div class="pt-3 p-0"><i class="bi bi-person-circle h1"></i>
+                    <div class="pt-3 p-0"><i class="bi bi-person-circle display-2"></i>
                     </div>
                   </div>
                   
@@ -463,7 +416,7 @@
       
                 <div class="card-body d-flex border-top">
                   <div class="col">
-                  <div class="pt-3 p-0"><i class="bi bi-person-circle h1"></i>
+                  <div class="pt-3 p-0"><i class="bi bi-person-circle display-2"></i>
                   </div>
                 </div>
                 
@@ -495,20 +448,43 @@
                   
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-md-12">Row 2</div>
               </div>
+
               <div class="row">
-                <div class="col-md-12">Row 3</div>
+                <div class="col-md-12">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <div class="col text-start pb-0">
+                        <p class="h5">Gig Details</p>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="d-flex"><div><i class="bi bi-person-circle display-1 "></i></div>
+                      <div class="col ps-4">
+                        <p>You have 52 open Boookings to manage this include 8 new.</p>
+                      </div></div>
+                      <div class="text-center"> <button
+                        type="button"
+                        class="btn btn-outline-dark rounded-pill px-5">
+                        View All
+                       </button></div>
+                    </div>
+                  
               </div>
             </div>
-          </div>
+              </div>
         </main>
       </div>
     </div>
 
+
+    <script src="/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    
   </body>
 </html>
