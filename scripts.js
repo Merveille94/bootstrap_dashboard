@@ -4,7 +4,7 @@
         datasets: [{
             label: 'monthly',
             data: [50, 60, 70, 80, 90, 100, 110],
-            backgroundColor: 'rgb(240, 255, 144)', // Lemon green color
+            backgroundColor: 'rgb(0, 123, 225)', // Lemon green color
             borderColor: 'rgba(54, 162, 235, 1)', // Border color
             borderWidth: 1.9,
             borderRadius: 50 // Pill shape
