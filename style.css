@@ -12,6 +12,7 @@ body {
   opacity: 1;
   /* overflow-y: hidden; */
   margin: 0;
+
 }
 
 .navbar {
@@ -35,4 +36,8 @@ body {
 /* the various content colors */
 .Sideitem {
   background: var(--bs-secondary-bg);
+}
+
+.sideitem2{
+  background: var(--bs-body-bg);
 }
