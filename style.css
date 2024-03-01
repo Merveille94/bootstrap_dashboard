@@ -18,6 +18,10 @@ body {
 .img_icon{
   max-width: 7rem;
 }
+.video{
+  max-height: 22rem;
+  max-width: 22rem;
+}
 /* end */
 
 .navbar {
