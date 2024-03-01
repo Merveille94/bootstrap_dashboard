@@ -47,3 +47,7 @@ body {
 .sideitem2{
   background: var(--bs-body-bg);
 }
+
+.active{
+  font-weight: 500;
+}
