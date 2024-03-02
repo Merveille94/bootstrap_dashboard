@@ -54,3 +54,18 @@ body {
 .active{
   font-weight: 500;
 }
+
+/* booking */
+.picture{
+  max-height: 22rem;
+  max-width: 22rem;
+}
+
+.picture2{
+  width:100%;
+}
+
+.pic1{
+  width: 18.75rem;
+  max-width: 18.75rem;
+}
