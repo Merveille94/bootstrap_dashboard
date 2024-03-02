@@ -15,10 +15,10 @@ body {
 }
 
 /* the homepage */
-.img_icon{
+.img_icon {
   max-width: 7rem;
 }
-.video{
+.video {
   max-height: 22rem;
   max-width: 22rem;
 }
@@ -37,7 +37,6 @@ body {
   background: var(--bs-secondary-bg);
 }
 
-
 .main {
   background: var(--bs-body-bg);
   padding-top: 2rem;
@@ -48,25 +47,25 @@ body {
   background: var(--bs-secondary-bg);
 }
 
-.sideitem2{
+.sideitem2 {
   background: var(--bs-body-bg);
 }
 
-.active{
+.active {
   font-weight: 500;
 }
 
 /* booking */
-.picture{
+.picture {
   max-height: 22rem;
   max-width: 22rem;
 }
 
-.picture2{
-  width:100%;
+.picture2 {
+  width: 100%;
 }
 
-.pic1{
+.pic1 {
   width: 15.75rem;
   max-width: 15.75rem;
 }
