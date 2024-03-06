@@ -69,3 +69,8 @@ body {
   width: 15.75rem;
   max-width: 15.75rem;
 }
+
+footer{
+  background: var(--bs-secondary-bg); 
+  height: 20vh;
+}
