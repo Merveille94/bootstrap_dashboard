@@ -24,3 +24,10 @@ hamburger.addEventListener("click", function () {
       maintainAspectRatio: false // visible on small screens
     }
   });
+
+  function toggleSchedule(type) {
+    const scheduleGigCards = document.getElementById('scheduleGigCards');
+    if (type === 'schedule') {
+      scheduleGigCards.classList.toggle('d-none');
+    }
+  }

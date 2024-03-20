@@ -323,6 +323,36 @@
 
                   <!-- 2nd -->
                   <div class="custom-col rounded-5 p-4">
+                    <div class="container">
+                      <div class="row pt-2">
+                          <!-- Buttons -->
+                          <div class="d-grid gap-2 mb-3">
+                            <button class="btn btn-outline-dark rounded-5" onclick="toggleSchedule('schedule')">Schedule gig</button>
+                            <button class="btn btn-outline-dark rounded-5">Publish now</button>
+                          </div>
+                          
+                          <!-- Schedule Gig Cards -->
+                          <div id="scheduleGigCards" class="d-none">
+                            <!-- Card for Booking Details -->
+                            <div class="card mb-3 rounded-5">
+                              <div class="card-body">
+                                <h5 class="card-title">Booking Details</h5>
+                                <p class="card-text">Choose a date and time for your job</p>
+                                <div class="mb-3">
+                                  <label for="datePicker" class="form-label rounded-5">Date</label>
+                                  <input type="date" class="form-control rounded-5" id="datePicker">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="timePicker" class="form-label rounded-5">Time</label>
+                                  <input type="time" class="form-control rounded-5" id="timePicker">
+                                </div>
+                                <button class="btn btn-outline-dark rounded-5">Confirm</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ps-3 text-center"><button type="button" class="btn btn-outline-dark rounded-pill btn-sm px-2">Save Draft</button></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
