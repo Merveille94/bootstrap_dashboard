@@ -30,6 +30,11 @@ body {
   min-width: 0;
 }
 
+.no-link-color {
+  color: inherit;
+  text-decoration: none; 
+}
+
 .input-group{
     padding-left: 40rem;
 }
