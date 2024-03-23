@@ -346,7 +346,6 @@
                                 <label for="timePicker" class="form-label rounded-5">Time</label>
                                 <input type="time" class="form-control rounded-5" id="timePicker">
                               </div>
-                              <button class="btn btn-outline-dark rounded-5">Save Draft</button> 
                               <button class="btn btn-outline-dark rounded-5" onclick="confirmBooking()">Confirm</button> <!-- Updated to call confirmBooking() -->
                             </div>
                           </div>
@@ -399,7 +398,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <script src="script.js"></script>
+
     <script> 
       // Function to parse URL parameters
       function getUrlParameter(name) {
@@ -433,6 +434,21 @@
           alert('Please select a date and time.');
         }
       }
-      </script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+  // Get the publish now button
+  var publishNowButton = document.getElementById('confirmButton');
+
+  // Add event listener to the button
+  publishNowButton.addEventListener('click', function() {
+    // Set the URL of the next page
+    var nextPageURL = 'bookingprocesspage.html';
+
+    // Navigate to the next page
+    window.location.href = nextPageURL;
+  });
+});
+
+    </script>
   </body>
 </html>

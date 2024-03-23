@@ -225,7 +225,7 @@
                     <div class="container">
                       <div class="row">
                           <!-- Buttons -->
-                          <button class="btn btn-outline-dark rounded-5"><a href="bookingprocesspage.html" class="no-link-color">Proceed to payment</a></button>
+                          <button class="btn btn-outline-dark rounded-5" id="paymentPage">Proceed to payment</button>
                       </div>
                     </div>
                   </div>
@@ -275,7 +275,6 @@
       crossorigin="anonymous"
     ></script>
   
-
     <script> 
       // Function to parse URL parameters
       function getUrlParameter(name) {
@@ -309,6 +308,20 @@
           alert('Please select a date and time.');
         }
       }
-      </script>
+
+     document.addEventListener('DOMContentLoaded', function() {
+     // Get the publish now button
+     var confirmNowButton = document.getElementById('paymentPage');
+
+     // Add event listener to the button
+     confirmNowButton.addEventListener('click', function() {
+     // Set the URL of the next page
+     var confirmPageURL = 'confirmationPage.html';
+
+     // Navigate to the next page
+     window.location.href = confirmPageURL;
+      });
+    });
+    </script>
   </body>
 </html>
