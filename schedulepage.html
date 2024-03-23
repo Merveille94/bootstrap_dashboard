@@ -325,35 +325,36 @@
                   <div class="custom-col rounded-5 p-4">
                     <div class="container">
                       <div class="row pt-2">
-                          <!-- Buttons -->
-                          <div class="d-grid gap-2 mb-3">
-                            <button class="btn btn-outline-dark rounded-5" onclick="toggleSchedule('schedule')">Schedule gig</button>
-                            <button class="btn btn-outline-dark rounded-5"><a href="bookingprocesspage.html" class="no-link-color">Publish now</a></button>
-                          </div>
-                          
-                          <!-- Schedule Gig Cards -->
-                          <div id="scheduleGigCards" class="d-none">
-                            <!-- Card for Booking Details -->
-                            <div class="card mb-3 rounded-5">
-                              <div class="card-body">
-                                <h5 class="card-title">Booking Details</h5>
-                                <p class="card-text">Choose a date and time for your job</p>
-                                <div class="mb-3">
-                                  <label for="datePicker" class="form-label rounded-5">Date</label>
-                                  <input type="date" class="form-control rounded-5" id="datePicker">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="timePicker" class="form-label rounded-5">Time</label>
-                                  <input type="time" class="form-control rounded-5" id="timePicker">
-                                </div>
-                                <button class="btn btn-outline-dark rounded-5">Confirm</button>
+                        <!-- Buttons -->
+                        <div class="d-grid gap-2 mb-3">
+                          <button class="btn btn-outline-dark rounded-5" onclick="toggleSchedule('schedule')">Schedule gig</button>
+                          <button id="confirmButton" class="btn btn-outline-dark rounded-5">Publish now</button>
+                        </div>
+                        
+                        <!-- Schedule Gig Cards -->
+                        <div id="scheduleGigCards" class="d-none">
+                          <!-- Card for Booking Details -->
+                          <div class="card mb-3 rounded-5">
+                            <div class="card-body">
+                              <h5 class="card-title">Booking Details</h5>
+                              <p class="card-text">Choose a date and time for your gig</p>
+                              <div class="mb-3">
+                                <label for="datePicker" class="form-label rounded-5">Date</label>
+                                <input type="date" class="form-control rounded-5" id="datePicker">
                               </div>
+                              <div class="mb-3">
+                                <label for="timePicker" class="form-label rounded-5">Time</label>
+                                <input type="time" class="form-control rounded-5" id="timePicker">
+                              </div>
+                              <button class="btn btn-outline-dark rounded-5">Save Draft</button> 
+                              <button class="btn btn-outline-dark rounded-5" onclick="confirmBooking()">Confirm</button> <!-- Updated to call confirmBooking() -->
                             </div>
                           </div>
-                          <div class="ps-3 text-center"><button type="button" class="btn btn-outline-dark rounded-pill btn-sm px-2">Save Draft</button></div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </section>
@@ -399,5 +400,39 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script> 
+      // Function to parse URL parameters
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+      
+      
+      // Retrieve date and time parameters from URL
+      var startTime = getUrlParameter('date');
+      var endTime = getUrlParameter('time');
+      
+      // Populate start time and end time
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('startTime').innerText = startTime;
+        document.getElementById('endTime').innerText = endTime;
+      });
+      
+      
+      // Function to confirm booking
+      function confirmBooking() {
+        const selectedDate = document.getElementById('datePicker').value;
+        const selectedTime = document.getElementById('timePicker').value;
+        
+        if (selectedDate && selectedTime) {
+          const confirmationURL = `bookingprocesspage.html?date=${selectedDate}&time=${selectedTime}`;
+          window.location.href = confirmationURL;
+        } else {
+          alert('Please select a date and time.');
+        }
+      }
+      </script>
   </body>
 </html>

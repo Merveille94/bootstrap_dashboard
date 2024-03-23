@@ -26,6 +26,7 @@
       <!-- the main section and navbar -->
       <div class="main">
         <nav class="navbar navbar-expand px-4 py-3">
+          <a href="schedulepage.html" class="no-link-color"><i class="bi bi-chevron-double-left h5"></i> </a>
           <form action="#" class="d-none d-sm-inline-block">
             <div class="input-group input-group-navbar">
               <input
@@ -86,50 +87,90 @@
             <section class="container">
               <div class="row">
                 <!-- first column -->
-                <div class="col-md-8">
-                  <div class="custom-col rounded-5 p-4">
+                <div class="col-md-6">
+                  <div class="p-4">
                     <!-- first row-->
-                    <div class="container">
-                      <h2 class="mb-4 display-6 fs-4">Gig Title</h2>
-                      <form>
-                        <div class="mb-3">
-                          <input type="text" class="form-control rounded-5" placeholder="Enter gig title ...">
+                    <div class="container pb-3">
+                      <h1 class="h4 pb-3">Confirm Booking</h1>
+                      
+                      <h1 class="h5">Step 1:</h1>
+                      <p>Venue Amenities</p>
+                      <div class="row">
+                        <div class="col">
+                          <i class="bi bi-wifi"></i> WiFi
                         </div>
-                        <div class="mb-3">
-                          <input type="text" class="form-control rounded-5" placeholder="Add a gig description ...">
+                        <div class="col">
+                          <i class="lni lni-car-alt"></i> Parking
                         </div>
-                        <div class="mb-3">
-                          <input type="text" class="form-control rounded-5" placeholder="Setlists ...">
+                        <div class="col">
+                          <i class="bi bi-key"></i> Key Access
                         </div>
-                        <button type="submit" class="btn btn-outline-dark rounded-4">Save</button>
-                      </form>
-                    </div>
-                  </div>
+                        <div class="col">
+                          <i class="lni lni-plane"></i> Air
+                        </div>
+                      </div>
 
-                  <!-- 2nd row-->
-                  <div class="custom-col rounded-5 p-4"> 
-                    <div class="container">
-                      <h2 class="mb-4 display-6 fs-4">Image and Call-to-Action</h2>
-                      <form>
-                        <div class="mb-3">
-                          <label for="callToAction" class="form-label">Call-to-Action</label>
-                          <textarea class="form-control rounded-4" id="callToAction" rows="10" placeholder="Enter your call-to-action here"></textarea>
+                      <br>
+                      
+                      <p class="h6">Choose Your Gig Package</p>
+                      <input type="text" class="form-control rounded-4" id="gigPackage" placeholder="Enter Your Preferred Gig">
+                      
+                      <br>
+                      
+                      <h3 class="h5">Step 2: Personal</h3>
+                      <input type="text" class="form-control mb-3 rounded-4" id="fullName" placeholder="Your Full Name" required>
+                      <input type="email" class="form-control mb-3 rounded-4" id="emailAddress" placeholder="Your Email Address" required>
+                      <input type="tel" class="form-control mb-3 rounded-4" id="telephoneNumber" placeholder="Your Telephone Number" required>
+                      
+                      <br>
+                      
+                      <h1 class="h5">Step 3: Payment Details</h1>
+                      <input type="text" class="form-control mb-3 rounded-4" id="nameOnCard" placeholder="Name on Card" required>
+                      <input type="text" class="form-control mb-3 rounded-4" id="cardNumber" placeholder="Card Number" required>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <input type="text" class="form-control rounded-4" id="expiry" placeholder="MM/YY" required>
                         </div>
-                        <div class="mb-3">
-                          <label for="coverImage" class="form-label">Cover Image</label>
-                          <input type="file" class="form-control rounded-5" id="coverImage">
+                        <div class="col">
+                          <input type="text" class="form-control rounded-4" id="cvc" placeholder="CVC" required>
                         </div>
-                        <button type="submit" class="btn btn-outline-dark rounded-4">Submit</button>
-                      </form>
+                      </div>
+                      
+                      <br>
+                      
+                      <h3 class="h5">Terms and Conditions</h3>
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="h6">Booking</h5>
+                          <input type="time" class="form-control mb-3 rounded-4">
+                        </div>
+                        <div class="col">
+                          <h5 class="h6">Cancellation Policy <i class="bi bi-question-circle-fill" data-bs-toggle="tooltip" title=" If made within 24 hours are subjected to a fee. Contact us for further details."></i></h5>
+                        </div>
+                      </div>
+                      
+                      <br>
+                      
+                      <h3 class="h5">Important Notice</h3>
+                      <div class="row">
+                        <div class="col">
+                          <i class="lni lni-hand"></i> No Pet Allowed
+                        </div>
+                        <div class="col">
+                          <i class="lni lni-thumbs-down"></i> No Smoking Allowed
+                        </div>
+                        <div class="col">
+                          <i class="lni lni-circle-minus"></i> No Alcohol
+                        </div>
+                      </div>
                     </div>
-                    
                   </div>
                 </div>
 
                 <!-- second column -->
                 <!-- 1st -->
-                <div class="col-md-3">
-                  <div class="custom-col rounded-5 p-4">
+                <div class="col-md-5">
+                  <div class="shadow rounded-5 p-4">
                     <div class="d-flex justify-content-between pb-4">
                       <p class="display-6 fs-4">Gig Preview</p>
                       <div class="text-end ps-2">
@@ -137,47 +178,54 @@
                       </div>
                     </div>
 
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="/img/priscilla-du-preez-AW1vLlH39Ww-unsplash.jpg" height="235" width="235" class="rounded-5 custom-img" alt="Image 1">
-                        <div class="d-flex align-items-center pt-2">
-                          <div class="flex-column  pe-5">
-                            <h6>Gig - 3600</h6>
-                          </div>
-                          <div class="ps-3"><button type="button" class="btn btn-outline-primary rounded-pill btn-sm px-2">45-60</button></div>
-                        </div>
+                    <div class="row">
+                        <img src="/img/priscilla-du-preez-AW1vLlH39Ww-unsplash.jpg" class="object-fit-fill rounded-5" alt="Image 1">
                     </div>
+
+                    <div class="container">
+                      <h1 class="h4 pt-4">Gig Venue <span>---</span></h1>
+                      <p>Live music venue in the city center</p>
+                      
+                      <br>
+                      
+                      <div class="row">
+                        <div class="col">
+                          <p>Start time: <span id="startTime"></span></p>
+                        </div>
+                        <div class="col">
+                          <p>End time: <span id="endTime"></span></p>
+                        </div>
+                      </div>
+                      
+                      <br>
+                      
+                      <h1 class="h5">Performance slot</h1>
+                      <div class="row">
+                        <div class="col">
+                          <p>Booking fee:</p>
+                          <p>3 Slots:</p>
+                          <p>Service charge:</p>
+                          <p>Transactions:</p>
+                          <p><strong>Total:</strong></p>
+                        </div>
+                        <div class="col">
+                          <p>$180</p>
+                          <p>$540</p>
+                          <p>$40</p>
+                          <p>$20</p>
+                          <p><strong>$600</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
 
                   <!-- 2nd -->
-                  <div class="custom-col rounded-5 p-4">
+                  <div class="p-4">
                     <div class="container">
-                      <div class="row pt-2">
+                      <div class="row">
                           <!-- Buttons -->
-                          <div class="d-grid gap-2 mb-3">
-                            <button class="btn btn-outline-dark rounded-5" onclick="toggleSchedule('schedule')">Schedule gig</button>
-                            <button class="btn btn-outline-dark rounded-5">Publish now</button>
-                          </div>
-                          
-                          <!-- Schedule Gig Cards -->
-                          <div id="scheduleGigCards" class="d-none">
-                            <!-- Card for Booking Details -->
-                            <div class="card mb-3 rounded-5">
-                              <div class="card-body">
-                                <h5 class="card-title">Booking Details</h5>
-                                <p class="card-text">Choose a date and time for your job</p>
-                                <div class="mb-3">
-                                  <label for="datePicker" class="form-label rounded-5">Date</label>
-                                  <input type="date" class="form-control rounded-5" id="datePicker">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="timePicker" class="form-label rounded-5">Time</label>
-                                  <input type="time" class="form-control rounded-5" id="timePicker">
-                                </div>
-                                <button class="btn btn-outline-dark rounded-5">Confirm</button>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="ps-3 text-center"><button type="button" class="btn btn-outline-dark rounded-pill btn-sm px-2">Save Draft</button></div>
+                          <button class="btn btn-outline-dark rounded-5"><a href="bookingprocesspage.html" class="no-link-color">Proceed to payment</a></button>
                       </div>
                     </div>
                   </div>
@@ -220,11 +268,47 @@
       </div>
     </div>
 
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+  
+
+    <script> 
+      // Function to parse URL parameters
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+      
+      
+      // Retrieve date and time parameters from URL
+      var startTime = getUrlParameter('date');
+      var endTime = getUrlParameter('time');
+      
+      // Populate start time and end time
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('startTime').innerText = startTime;
+        document.getElementById('endTime').innerText = endTime;
+      });
+      
+      
+      // Function to confirm booking
+      function confirmBooking() {
+        const selectedDate = document.getElementById('datePicker').value;
+        const selectedTime = document.getElementById('timePicker').value;
+        
+        if (selectedDate && selectedTime) {
+          const confirmationURL = `bookingprocesspage.html?date=${selectedDate}&time=${selectedTime}`;
+          window.location.href = confirmationURL;
+        } else {
+          alert('Please select a date and time.');
+        }
+      }
+      </script>
   </body>
 </html>
